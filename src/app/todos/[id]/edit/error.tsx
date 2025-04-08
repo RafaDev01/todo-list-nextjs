@@ -3,9 +3,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
-
-const TodoEditErrorPage = (props: Props) => {
+const TodoEditErrorPage = () => {
     return (
         <div>
             <h1>Ocorreu um problema, tente novamente mais tarde</h1>

@@ -2,16 +2,14 @@ import { findTodoById } from '@/actions'
 import { TodoForm } from '@/components/TodoForm'
 import React from 'react'
 
-type Props = {
-    params: {
-        id: string
-    }
-}
+type PageProps = {
+    params: Promise<{ id: string }>;
+};
 
-const TodoEdit = async ({ params }: Props) => {
+const TodoEdit = async ({ params }: PageProps) => {
     const { id } = await params;
 
-    const todo = await findTodoById(Number(id)) // ← precisa de `await`
+    const todo = await findTodoById(Number(id)); // Certifique-se de que `findTodoById` é uma função assíncrona
 
     if (!todo) {
         return <div>Todo não encontrado</div>

@@ -1,9 +1,8 @@
 import React from 'react'
 import { addTodo } from './actions'
 
-type Props = {}
 // 1 - Criação do form
-const TodoPage = (props: Props) => {
+const TodoPage = () => {
     //formData => useState
     //2 - Inserção no banco
     return (

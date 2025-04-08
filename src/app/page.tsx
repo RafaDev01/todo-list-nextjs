@@ -11,7 +11,7 @@ export default async function Home() {
       <h1 className="text-2xl font-bold mb-4">Lista de tarefas</h1>
       <div className="space-y-4">
         {todos.map((todo) => (
-          <div key={todo.id} className="bg-white rounded-lg p-4 border border-4 border-gray-500">
+          <div key={todo.id} className="bg-white rounded-lg p-4 border-4 border-gray-500">
             <div className="flex justify-between items-start">
               <div>
                 <h2 className="text-xl font-semibold">{todo.titulo}</h2>

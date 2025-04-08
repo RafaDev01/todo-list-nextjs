@@ -1,8 +1,6 @@
 import React from 'react'
 
-type Props = {}
-
-const LoadingTodo = (props: Props) => {
+const LoadingTodo = () => {
     return (
         <div>
             <p>Carregando dados...</p>

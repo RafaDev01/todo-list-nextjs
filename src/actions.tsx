@@ -26,7 +26,7 @@ export const findTodoById = async (id: number): Promise<Todo | null> => {
     return todo;
 };
 
-export const updateTodo = async (_formState: any, formData: FormData) => {
+export const updateTodo = async (_formState: unknown, formData: FormData) => {
     const id = Number(formData.get("id"));
     const titulo = formData.get("titulo")?.toString();
     const descricao = formData.get("descricao")?.toString();

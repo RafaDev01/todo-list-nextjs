@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
-
-const Header = (props: Props) => {
+const Header = () => {
     return (
         <header className='bg-blue-500 text-white p-4'>
             <nav className='container mx-auto flex justify-between'>

@@ -1,9 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-type Props = {}
-
-const TodoNotFound = (props: Props) => {
+const TodoNotFound = () => {
     return (
         <div>
             <h1>Todo não encontrado.</h1>
